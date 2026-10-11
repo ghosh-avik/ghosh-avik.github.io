@@ -49,21 +49,27 @@ MathJax.Hub.Config({
 operating energy systems economically as they take on more renewables, electric vehicles, and battery
 storage. What draws me to these problems is that they demand two things at once: guarantees that hold up
 under analysis, and algorithms cheap enough to run in real time on a real site. I came to them from
-thermal engineering, so <b>heat transfer</b> and <b>HVAC-R</b> systems remain live interests &#8201;&mdash;&#8201; what follows traces
+thermal engineering, so <b>heat transfer</b> and <b>heating, ventilation, air conditioning, and refrigeration (HVAC-R)</b> systems remain live interests &#8201;&mdash;&#8201; what follows traces
 the work from what I am doing now back to where I started.</p>
+<div class="rs-fig">
+  <img src="./images/research-cev.png" alt="Mobile charging stations shuttle energy between the grid and electric excavators, loaders and rollers on live UC San Diego construction sites" />
+</div>
 <p>My postdoctoral research focuses on designing algorithms that enable smooth operation of construction 
-electric vehicles (CEVs) supported by mobile charging stations (MCSs). Because CEVs are large and typically 
+electric vehicles (CEVs) supported by mobile charging stations (MCSs). Because construction EVs are large and typically 
 immobile during operation, traveling to fixed EV charging stations for recharging is often impractical. 
-MCSs address this challenge by bringing charging directly to construction sites, and then recharging themselves 
+Mobile charging stations address this challenge by bringing charging directly to construction sites, and then recharging themselves 
 at EV charging stations at convenient times. One of our main goals is to develop 
 machine learning models that predict the energy demand of different 
 construction activities from real-life construction sites at UC San Diego. Additionally, we aim to formulate
-spatio-temporal optimization algorithms that ensure CEVs have 
-sufficient charge to complete their tasks, while ensuring cost-efficient and low-carbon grid charging for the MCS. 
+spatio-temporal optimization algorithms that ensure construction EVs have 
+sufficient charge to complete their tasks, while ensuring cost-efficient and low-carbon grid charging for the mobile charging stations. 
 Ultimately, this work aims to reduce both operating costs and carbon emissions as compared to state-of-the-art EV-MCS charging algorithms, and conventional
 diesel-powered construction equipment.</p>
-<div class="rs-fig">
-  <img src="./images/research-cev.png" alt="Mobile charging stations shuttle energy between the grid and electric excavators, loaders and rollers on live UC San Diego construction sites" />
+<div class="rs-fig-grid">
+  <img src="./images/Latex_State_space.png" alt="State-space sketch: the EMPC always keeps a feasible plan ending in the terminal set, the backbone of the no-worse-than-reference guarantee" />
+  <img src="./images/research-empc.png" alt="Bar chart: our baseline-improved EMPC cuts the monthly electricity cost of the Port of San Diego microgrid by 12.4 percent against the standard reference" />
+  <img src="./images/research-ccmpc.png" alt="Year-long time series and cost bars: constraint violations settle exactly on every permitted budget, and a larger budget buys a lower yearly electricity bill" />
+  <img src="./images/research-ev-charging.png" alt="Total yearly electricity cost versus daily EV energy demand: bidirectional V2B charging stays below even the no-EV baseline, while uncontrolled V0G costs the most" />
 </div>
 <p>My PhD research addressed the question: <i>‘How can microgrids with high variable renewable energy
 (VRE) penetration and dispatchable energy resources &ndash; such as electric vehicles (EVs) and battery energy
@@ -78,10 +84,8 @@ methods use techniques from <b>convex optimization</b>, <b>economic model predic
 optimization</b>, and are backed by both rigorous theoretical guarantees, and simulations on realistic microgrid data
 and tariff profiles.</p>
 <div class="rs-fig-grid">
-  <img src="./images/Latex_State_space.png" alt="State-space sketch: the EMPC always keeps a feasible plan ending in the terminal set, the backbone of the no-worse-than-reference guarantee" />
-  <img src="./images/research-empc.png" alt="Bar chart: our baseline-improved EMPC cuts the monthly electricity cost of the Port of San Diego microgrid by 12.4 percent against the standard reference" />
-  <img src="./images/research-ccmpc.png" alt="Year-long time series and cost bars: constraint violations settle exactly on every permitted budget, and a larger budget buys a lower yearly electricity bill" />
-  <img src="./images/research-ev-charging.png" alt="Total yearly electricity cost versus daily EV energy demand: bidirectional V2B charging stays below even the no-EV baseline, while uncontrolled V0G costs the most" />
+  <img src="./images/scheme.png" alt="Scheme of the solar liquid desiccant air conditioning system: regenerator, desiccant tanks, heat exchangers, dehumidifier, dew point indirect evaporative cooler and cooling tower" />
+  <img src="./images/regenerator.png" alt="Cross-section of the forced-flow solar regenerator: weak, moisture-rich liquid desiccant enters, is concentrated by solar thermal evaporation under the glazing, and exits strong" />
 </div>
 <p>Once upon a time, many eons ago as an undergrad, I worked on <a href="https://articsolar.com/solar-desiccant-cooling-systems/" target=&ldquo;blank&rdquo;>solar desiccant cooling</a> systems for hot and humid
 tropical/subtropical areas of the world as a replacement for conventional air conditioners. 
@@ -90,36 +94,12 @@ The core idea was to first treat hot and humid air by a hygroscopic substance su
 which reduces its temperature before supplying it to the conditioned space. The liquid desiccant is returned
 to its concentrated form by evaporating the trapped moisture using solar thermal energy. I would again like to
 work on similar problems at the intersection of heat transfer/fluid mechanics and controls in the near future.</p>
-<div class="rs-fig-grid">
-  <img src="./images/scheme.png" alt="Scheme of the solar liquid desiccant air conditioning system: regenerator, desiccant tanks, heat exchangers, dehumidifier, dew point indirect evaporative cooler and cooling tower" />
-  <img src="./images/regenerator.png" alt="Cross-section of the forced-flow solar regenerator: weak, moisture-rich liquid desiccant enters, is concentrated by solar thermal evaporation under the glazing, and exits strong" />
-</div>
 <h2>Research agenda</h2>
 <p>Borrowing from <a href="https://www.stat.cmu.edu/~aramdas/" target=&ldquo;blank&rdquo;>Aaditya Ramdas</a>, I <b>try</b> and <b>aim</b> to be 
 a <i>'practical theorist'</i>, where the crux of my work focuses on developing algorithms with strong 
 theoretical guarantees, but are simple/inexpensive enough to be used in practice. While the sustainability 
 agenda heavily influences my work, I am mesmerized by the elegant mathematics and generality that the field of systems and controls offers &#8201;&mdash;&#8201; and in this way, I am 
 also broadly interested in all aspects of <i>control of dynamical systems</i>, and <i>decision making under uncertainty</i>. </p>
-<h2>Inspiration and mission</h2>
-<p>I grew up in <a href="https://en.wikipedia.org/wiki/Kolkata" target=&ldquo;blank&rdquo;>Kolkata</a> in the 2000s. Over my lifetime, as in much of India, 
-the quality of life of my city's residents has improved rapidly &#8201;&mdash;&#8201; but rapid growth has also brought visible downsides:
-pollution, traffic congestion, and inefficient trash/waste management. I am no
-<a href="https://en.wikipedia.org/wiki/Malthusianism" target=&ldquo;blank&rdquo;>Malthusian</a>, and I believe a lot of these problems will alleviate as India continues to develop more
-and moves further into middle-income
-status. My goal is to contribute to that progress by tackling important problems in my areas of interest 
-and in helping build a workforce equipped to meet the demands of the future.</p>
-<p>While poverty alleviation aided by fast growth is of utmost importance, the rising carbon footprint
-and (sometimes) unnecessary (in my opinion) consumerism of the modern world
-deeply concern me. I hope that
-through my research, someday, I will be able to effect some (small) change in the quest towards the transformation 
-to a majorly clean(er) energy powered future. If India is able to sustainably develop, it will be an inspiration 
-for the rest of the developing world.</p>
-<p>I am deeply interested in and try to learn about ancient Indic philosophy which, in spirit, guides my actions and research.</p>
-<p>माता भूमि, पुत्रोऽहं पृथिव्याः <i>Earth is my mother, and I am her son</i> &#8201;&mdash;&#8201; <a href="https://en.wikipedia.org/wiki/Atharvaveda" target=&ldquo;blank&rdquo;>Atharvaveda</a>, 
-1200 BCE.<br />
-समुद्रवसने देवि पर्वतस्तनमण्डले, विष्णुपत्नि नमस्तुभ्यं पादस्पर्शं क्षमस्वमे: <i>O Mother Earth, adorned by oceans and mountains, 
-consort of Lord Vishnu, I bow to you. Forgive me for treading on you.</i> &#8201;&mdash;&#8201; 
-<a href="https://en.wikipedia.org/wiki/Rigveda" target=&ldquo;blank&rdquo;>Rigveda</a>, 1500 BCE.</p>
 </div> <!-- .content-inner -->
 </main>
 <footer class="site-footer">
@@ -130,7 +110,7 @@ consort of Lord Vishnu, I bow to you. Forgive me for treading on you.</i> &#8201
 <span><i class="fa fa-map-marker" aria-hidden="true"></i> Franklin Antonio Hall, Collaboratory 2300</span>
 </div>
 <div id="footer-text">
-Last edited on August 26<sup>th</sup> 2026  07:13PM (Time Zone: PDT).
+Last edited on October 10<sup>th</sup> 2026  10:51PM (Time Zone: PDT).
 </div> <!-- #footer-text -->
 </div> <!-- .footer-inner -->
 </footer>
